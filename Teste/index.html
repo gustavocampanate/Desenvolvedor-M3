@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Agência M3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="card.css" rel="stylesheet">
+    <link href="body.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <img class="logo" src="/imagens/logo-m3.png" alt="logo">
+        <img src="/imagens/carrinho.png" alt="">
+        <hr>
+
+    </div>
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h1>Blusas</h1>
+            <h3>CORES</h3>
+
+            <p>
+                <input type="checkbox" checked class="filtroCor" id="Branco" />
+                <label for="Branco">Branco</label>
+            </p>
+            <p>
+                <input type="checkbox" checked class="filtroCor" id="Azul" />
+                <label for="Azul">Azul</label>
+            </p>
+            <p>
+                <input type="checkbox" checked class="filtroCor" id="Amarelo" />
+                <label for="Amarelo">Amarelo</label>
+            </p>
+            <p>
+                <input type="checkbox" checked class="filtroCor" id="Preto" />
+                <label for="Preto">Preto</label>
+            </p>
+            <p>
+                <input type="checkbox" checked class="filtroCor" id="Rosa" />
+                <label for="Rosa">Rosa</label>
+            </p>
+            <p>
+                <input type="checkbox" checked class="filtroCor" id="Colorido" />
+                <label for="Colorido">Colorido</label>
+            </p>
+            <p>
+                <input type="checkbox" checked class="filtroCor" id="Transparente" />
+                <label for="Transparente">Transparente</label>
+            </p>
+
+        </div>
+
+        <div class="main">
+
+            <select id="ordemPreco">
+                <option selected hidden value="crescente">Ordenar por:</option>
+                <option value="crescente">Menor preço</option>
+                <option value="decrescente">Maior preço</option>
+            </select>
+
+            <div class="vitrine">
+                <div id="coluna1" class="column"></div>
+                <div id="coluna2" class="column"></div>
+                <div id="coluna3" class="column"></div>
+            </div>
+            <section class="carregarmais">
+                <a class="botao"><b>CARREGAR MAIS</b></a>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <small>Agência M3 - Agência de Performance Digital</small>
+    </div>
+
+    <script src="js/ordenacao.js"></script>
+    <script src="js/filtraProdutos.js"></script>
+    <script src="js/produtos.js"></script>
+    <script src="js/renderizaProdutos.js"></script>
+
+</body>
+
+</html>
